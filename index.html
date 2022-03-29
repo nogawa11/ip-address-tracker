@@ -1,48 +1,50 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  <link rel="stylesheet" href="styles.css">
-  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
-   integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
-   crossorigin=""/>
-   <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
-   integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
-   crossorigin=""></script>
-  <title>Frontend Mentor | IP Address Tracker</title>
-</head>
-<body>
-  <div class="header">
-    <h1>IP Address Tracker</h1>
-    <form class="form">
-      <input type="text" name="ip" class="input" aria-label="Search IP" placeholder="Search for any IP address or domain">
-      <button type="submit" class="button-submit"><img src="images/icon-arrow.svg"></button>
-    </form>
-  </div>
-  <div class="content">
-    <div class="information">
-      <div class="info-container ipaddress">
-        <h5>IP Address</h5>
-        <span class="information-result info-ipaddress"></span>
-      </div>
-      <div class="info-container location">
-        <h5>Location</h5>
-        <span class="information-result info-location"></span>
-      </div>
-      <div class="info-container timezone">
-        <h5>Timezone</h5>
-        <span class="information-result info-timezone"></span>
-      </div>
-      <div class="info-container isp">
-        <h5>ISP</h5>
-        <span class="information-result info-isp"></span>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+    integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
+    crossorigin=""/>
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
+    integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
+    crossorigin=""></script>
+    <title>Frontend Mentor | IP Address Tracker</title>
+  </head>
+  <body>
+    <div class="header">
+      <h1>IP Address Tracker</h1>
+      <form class="form">
+        <input type="text" name="ip" class="input" aria-label="Search IP" placeholder="Search for any IP address or domain">
+        <button type="submit" class="button-submit">
+          <img src="images/icon-arrow.svg">
+        </button>
+      </form>
+    </div>
+    <div class="content">
+      <div class="information">
+        <div class="info-container ipaddress">
+          <h5>IP Address</h5>
+          <span class="information-result info-ipaddress"></span>
+        </div>
+        <div class="info-container location">
+          <h5>Location</h5>
+          <span class="information-result info-location"></span>
+        </div>
+        <div class="info-container timezone">
+          <h5>Timezone</h5>
+          <span class="information-result info-timezone"></span>
+        </div>
+        <div class="info-container isp">
+          <h5>ISP</h5>
+          <span class="information-result info-isp"></span>
+        </div>
       </div>
     </div>
-  </div>
-  <div id="map"></div>
-  <script type='text/javascript' src='config.js'></script>
-  <script src="app.js"></script>
-</body>
+    <div id="map"></div>
+    <script type='text/javascript' src='config.js'></script>
+    <script src="app.js"></script>
+  </body>
 </html>
