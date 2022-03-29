@@ -1,6 +1,5 @@
 const leafIcon = L.Icon.extend({
 });
-
 const mapIcon = new leafIcon({
   iconUrl: 'images/icon-location.svg',
   iconSize:     [38, 45],

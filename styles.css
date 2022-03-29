@@ -76,9 +76,9 @@ input[type='text'] {
   justify-content: space-between;
   border-radius: 16px;
   width: 80vw;
-  height: 160px;
+  height: 150px;
   padding: 0 32px;
-  top: 200px;
+  top: 205px;
   position: absolute;
   z-index: 100;
   background-color: white;
@@ -109,9 +109,50 @@ h5 {
   border-right: 1px solid rgb(218, 218, 218);
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  word-wrap: break-word;
+  padding-right: 16px;
 }
 
 .info-container:last-child {
   border-right: none;
+}
+
+@media only screen and (max-width: 800px) {
+  input[type='text'] {
+    font-size: 14px;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+
+  .information {
+    padding: 0 16px;
+  }
+
+  .info-container {
+    word-wrap: break-word;
+  }
+
+  .information-result {
+    font-size: 16px;
+  }
+
+  input[type='text'] {
+    box-sizing: border-box;
+    padding-left: 16px;
+    font-size: 12px;
+  }
+
+  input {
+    width: 54vw;
+    box-sizing: border-box;
+  }
+
+  .ipaddress, .location, .timezone, .isp {
+    width: 16vw;
+  }
+
+  h5 {
+    font-size: 10px;
+  }
 }
