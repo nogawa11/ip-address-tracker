@@ -1,5 +1,14 @@
+const leafIcon = L.Icon.extend({
+});
+
+const mapIcon = new leafIcon({
+  iconUrl: 'images/icon-location.svg',
+  iconSize:     [38, 45],
+  iconAnchor:   [22, 45],
+  popupAnchor:  [-3, -76]
+})
 const mymap = L.map('map')
-const marker = L.marker([0, 0]).addTo(mymap);
+const marker = L.marker([0, 0], {icon: mapIcon}).addTo(mymap);
 const ipAddress = document.querySelector('.info-ipaddress')
 const region = document.querySelector('.info-location')
 const timezone = document.querySelector('.info-timezone');
